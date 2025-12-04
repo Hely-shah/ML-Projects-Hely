@@ -1,2 +1,8 @@
 # Spam Email Classification
-A machine learning project where I built multiple classification models (Logistic Regression, SVM, Naive Bayes) to classify emails as spam or not spam.
+
+This project predicts whether an email is spam or not using:
+- Logistic Regression
+- Naive Bayes
+- Support Vector Machine (SVM)
+
+It includes preprocessing, TF-IDF vectorization, model comparison, ROC curves, and confusion matrices.
