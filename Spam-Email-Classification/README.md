@@ -1,54 +1,46 @@
+# Spam Email Classification (Binary Classification)
 
-Hely
-Project Title:
-Comparative Analysis of Machine Learning Models for Binary and Multiclass Classification
+This project predicts whether an email is **spam** or **not spam** using multiple machine learning models.  
+It includes preprocessing, TF-IDF vectorization, model training, evaluation, and visualization.
 
-Overview:
-This project explores two machine learning problems:
-1. Binary Classification - Spam Email Detection
-2. Multiclass Classification - Student Academic Performance Prediction
+## Dataset
+- Binary labeled email dataset (Spam = 1, Not Spam = 0)
+- Text features transformed using **TF-IDF**
 
-The code includes data preprocessing, feature scaling, class balancing (SMOTE),
-model training, hyperparameter tuning, performance evaluation, and visualization.
+## Machine Learning Models Used
+- **Logistic Regression**
+- **Naive Bayes**
+- **Support Vector Machine (SVM)**
 
-Datasets:
-- Email Dataset: TF-IDF transformed features for spam classification
-- Student Dataset: Academic performance with categorical and numeric features
+## Key Steps in the Notebook
+- Text cleaning & preprocessing
+- TF-IDF feature extraction
+- Train-test split
+- Model training and comparison
+- Confusion matrices & classification reports
+- ROC curves for model evaluation
+- Accuracy bar charts & learning curves
 
-Implemented Models:
-- Binary (Spam): Naive Bayes, Support Vector Machine (SVM), Logistic Regression
-- Multiclass (Student): Decision Tree, Random Forest, Logistic Regression, Naive Bayes
+## Results Summary
+- **SVM** achieved the highest accuracy and best ROC-AUC score.
+- Logistic Regression and Naive Bayes also performed efficiently with fast training times.
 
-Key Features of the Code:
-Preprocessing pipelines for both datasets
-SMOTE for class imbalance correction
-Hyperparameter tuning (GridSearchCV for SVM, Decision Trees, etc.)
-Confusion Matrix and Classification Reports
-ROC Curves, Accuracy Bar Charts, and Learning Curves
-Code modularity and separation of tasks by dataset type
+## How to Run
+1. Open the notebook: `Spam_Email_Classification.ipynb`
+2. Run all cells sequentially
+3. Requires Python 3.8+ and the following libraries:
+   - scikit-learn
+   - pandas
+   - numpy
+   - matplotlib
+   - seaborn
 
-How to Run (Google Colab):
-1. Open `Phase3_ML_Project_HelyShah.ipynb` in Google Colab.
-2. Ensure required libraries are installed using pip commands where necessary.
-3. Run each cell sequentially for setup, training, evaluation, and visualization.
+## Project Files
+- `Spam_Email_Classification.ipynb` — full code
+- `report.pdf` — project report
+- `presentation.pdf` — slides explaining methodology & results
 
-Required Libraries:
-- scikit-learn
-- matplotlib
-- seaborn
-- pandas
-- numpy
-- imblearn
-\=
-Results Summary:
-- Best Binary Model: SVM achieved highest accuracy and AUC on the email dataset.
-- Best Multiclass Model: Random Forest outperformed others in the student dataset
-  in terms of accuracy and robustness.
-
-Credits:
-- Developed by: Hely Shah
-- Tools used: Google Colab, Python, scikit-learn, pandas, matplotlib
-
-Notes:
-Please ensure all required packages are installed before running the notebook.
-For academic use and evaluation only.
+## Author
+**Hely Shah**  
+MS in Computer Science, Hofstra University  
+Project developed using Google Colab & Python.
